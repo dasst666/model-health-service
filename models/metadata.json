@@ -1,0 +1,22 @@
+{
+    "model_name": "iris_classifier",
+    "model_version": "1.0.0",
+    "created_at": "2026-02-09T07:36:21.820313",
+    "framework": "scikit-learn",
+    "sklearn_version": "1.8.0",
+    "algorithm": "SVC",
+    "features": [
+        "sepal_length",
+        "sepal_width",
+        "petal_length",
+        "petal_width"
+    ],
+    "target_classes": [
+        "setosa",
+        "versicolor",
+        "virginica"
+    ],
+    "metrics": {
+        "accuracy": 0.9666666666666667
+    }
+}
