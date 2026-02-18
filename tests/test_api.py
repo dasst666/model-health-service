@@ -14,7 +14,7 @@ def test_health():
     response = client.get("/health")
     data = response.json()
 
-    assert response.status_code == 999
+    assert response.status_code == 200
     assert data["status"] == "healthy"
     assert "model_version" in data
 
@@ -28,5 +28,5 @@ def test_predict():
     response = client.post("/predict", json={"features": [5.1, 3.5, 1.4, 0.2]})
     data = response.json()
 
-    assert response.status_code == 999
+    assert response.status_code == 200
     assert "prediction_id" in data
